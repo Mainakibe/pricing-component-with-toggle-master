@@ -5,48 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
-
-  Our Pricing
-  Annually
-  Monthly
-
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="wrapper">
+    <div class="header">
+      <header>
+        <h1>Our Pricing</h1> 
+       </header>
+       <div class="toggle">
+         <span>Annually</span> 
+         <input type="checkbox">
+         <span>Monthly</span> 
+       </div>
+    </div>
+    <div class="container">
+      <div class="sections">
+        <section class="basic">
+          <h2>Basic</h2>
+          <div class="price">
+            &dollar;19.99
+            <!-- &dollar;199.99 -->
+          </div>
+          <div class="smalls">
+            <small>500 GB Storage</small>
+            <small>2 Users Allowed</small>
+            <small>Send up to 3 GB</small>
+            <button class="bam-btn">Learn More</button>
+          </div>
+        </section>
+        <section class="pro">
+          <h2 class="pro-title">Professional</h2>
+          <div class="price">
+            &dollar;24.99
+            <!-- &dollar;249.99 -->
+          </div>
+         <div class="smalls">
+            <small>1 TB Storage</small>
+            <small>5 Users Allowed</small>
+            <small>Send up to 10 GB</small>
+            <button class="pro-btn">Learn More</button>
+         </div>
+        </section>
+        <section class="master">
+            <h2>Master</h2>
+            <div class="price">
+            &dollar;39.99
+            <!-- &dollar;399.99 -->
+          </div>
+          <div class="smalls">
+            <small>2 TB Storage</small>
+            <small>10 Users Allowed</small>
+            <small>Send up to 20 GB</small>
+            <button class="bam-btn">Learn More</button>
+          </div>
+        </section>
+      </div>
+    </div>
   </div>
+  <script src="./main.js"></script>
 </body>
 </html>
