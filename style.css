@@ -46,12 +46,45 @@ header{
 }
 
 /* toggle */
-.toggle{
+.toggle-wrapper{
+    display: flex;
+    align-items: center;
     padding: 0 0 50px ;
 }
-span{
+.toggle{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+.label{
+    width: 65px;
+    height: 30px;
+    border-radius: 30px;
+    background:var(--LinearGradient);
+    position: absolute;
+    cursor: pointer;
+}
+.ball{
+    width: 1.6em;
+    height: 1.6em;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 3px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+#checkbox:checked ~ label .ball{
+    transform: translateX(2em);
+}
+#checkbox{
+    display: none;
+}
+p{
     font-size: 14px;
     color: var(--LightGrayishBlue);
+    margin: 0 50px;
 }
 
 /* container */
@@ -61,6 +94,9 @@ span{
     justify-content: center;
     width: 80%;
 }
+
+/* section */
+
 .sections{
     display: flex;
     align-items: center;
@@ -73,11 +109,9 @@ section{
     align-items: center;
     justify-content: center;
     width: 33.3%;
-    background-color: yellow;
-    /* margin: 0 10px 0 0 ; */
 }
-.basic,
-.master{
+#basic,
+#master{
     padding: 15px 0;
     background-color: var(--VeryLightGrayishBlue);
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -87,15 +121,15 @@ section{
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
-.basic{
+#basic{
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
-.master{
+#master{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.pro{
+#pro{
     padding: 50px 0;
     background: var(--LinearGradient);
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -120,6 +154,7 @@ h2{
     color: var(--DarkGrayishBlue);
     padding: 0 0 15px 0;
 }
+/* smalls */
 .smalls{
     display: flex;
     flex-direction: column;
@@ -135,19 +170,31 @@ small{
     width: 90%;
     text-align: center;
 }
+small:nth-last-child(2){
+    border-bottom:1px solid var(--GrayishBlue);
+}
+
+/* buttons */ 
+
 .bam-btn{
     outline: none;
     border: none;
     padding: 10px 0;
     background: var(--LinearGradient);
     border-radius: 5px;
-    margin: 10px 0;
+    margin: 30px 0;
     font-size: 16px;
     font-weight: 700;
     color: var(--VeryLightGrayishBlue);
     text-transform: uppercase;
     letter-spacing: 5px;
     width: 100%;
+}
+.bam-btn:hover{
+    background: var(--VeryLightGrayishBlue);
+    color: hsl(237, 63%, 64%);
+    border: 1px solid var(--GrayishBlue);
+    cursor:pointer;
 }
 .pro-btn{
     outline: none;
@@ -162,4 +209,11 @@ small{
     text-transform: uppercase;
     letter-spacing: 5px;
     width: 100%;
+    
+}
+.pro-btn:hover{
+    background:var(--LinearGradient) ;
+    color: var(--VeryLightGrayishBlue);
+    border: 2px solid var(--GrayishBlue);
+    cursor: pointer;
 }

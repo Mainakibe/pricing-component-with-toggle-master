@@ -17,19 +17,25 @@
       <header>
         <h1>Our Pricing</h1> 
        </header>
-       <div class="toggle">
-         <span>Annually</span> 
-         <input type="checkbox">
-         <span>Monthly</span> 
+       <div class="toggle-wrapper">
+         <p>Annually</p> 
+         <div class="toggle">
+          <input type="checkbox" id="checkbox">
+         <label for="checkbox" class="label">
+           <div class="ball">
+
+           </div>
+         </label>
+         </div>
+         <p>Monthly</p> 
        </div>
     </div>
     <div class="container">
       <div class="sections">
-        <section class="basic">
+        <section id="basic">
           <h2>Basic</h2>
           <div class="price">
-            &dollar;19.99
-            <!-- &dollar;199.99 -->
+            &dollar;<span class="basic-plan">19.99</span>
           </div>
           <div class="smalls">
             <small>500 GB Storage</small>
@@ -38,11 +44,10 @@
             <button class="bam-btn">Learn More</button>
           </div>
         </section>
-        <section class="pro">
+        <section id="pro">
           <h2 class="pro-title">Professional</h2>
           <div class="price">
-            &dollar;24.99
-            <!-- &dollar;249.99 -->
+            &dollar;<span class="pro-plan">24.99</span> 
           </div>
          <div class="smalls">
             <small>1 TB Storage</small>
@@ -51,11 +56,10 @@
             <button class="pro-btn">Learn More</button>
          </div>
         </section>
-        <section class="master">
+        <section id="master">
             <h2>Master</h2>
             <div class="price">
-            &dollar;39.99
-            <!-- &dollar;399.99 -->
+            &dollar;<span class="master-plan">39.99</span> 
           </div>
           <div class="smalls">
             <small>2 TB Storage</small>
