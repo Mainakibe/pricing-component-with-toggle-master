@@ -1,8 +1,8 @@
-const checkbox = document.getElementById('checkbox')
-const basicPlan = document.querySelector('.basic-plan')
-const proPlan = document.querySelector('.pro-plan')
-const masterPlan = document.querySelector('.master-plan')
-const label = document.querySelector('.label')
+const checkbox = document.getElementById('checkbox');
+const basicPlan = document.querySelector('.basic-plan');
+const proPlan = document.querySelector('.pro-plan');
+const masterPlan = document.querySelector('.master-plan');
+
 
 checkbox.addEventListener('change',()=>{
     if(checkbox.checked){
