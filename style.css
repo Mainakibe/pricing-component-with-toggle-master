@@ -218,7 +218,7 @@ small:nth-last-child(2){
     cursor: pointer;
 }
 
-
+/* media query */
 @media (max-width:768px){
     .wrapper{
         background-image: url('/images/bg-top.svg');
@@ -246,6 +246,7 @@ small:nth-last-child(2){
     #master{
         border-radius: 10px;
     }
+    /* smaller screens */
     @media screen and (device-aspect-ratio: 40/71) {
         .wrapper{
             background-image: url('/images/bg-top.svg');
